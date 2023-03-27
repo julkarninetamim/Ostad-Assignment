@@ -3,6 +3,7 @@ include "functions.php";
 $msg="";
 if(isset($_POST["login"])){
     $msg=loginMachanism($_POST);
+    
 }
 
 ?>
@@ -15,8 +16,15 @@ if(isset($_POST["login"])){
 <body>
 	<div class="container">
         <div class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-md-6 offset-md-3">
                 <h1>Login Form</h1>
+                <?php 
+                    if(isset($msg["error"])){
+                        echo "<p class='text-danger'>".$msg['error']."</p>";
+                    }elseif(isset($msg["wrong"])){
+                        echo "<p class='text-danger'>".$msg['wrong']."</p>";
+                    }
+                ?>
                 <form method="post" action="">
                     <div class="form-group">
                         <label for="email">Email Address:</label>
@@ -31,30 +39,7 @@ if(isset($_POST["login"])){
                     </div>
                 </form>
             </div>
-            <div class="col-md-6">
-                <?php 
-                    if(isset($msg["error"])){
-                        echo "<p class='text-danger'>".$msg['empty']."</p>";
-                    }elseif(isset($msg["wrong"])){
-                        echo "<p class='text-danger'>".$msg['email']."</p>";
-                    }
-                ?>
-                <h3 class="text-center">Use these as login information</h3>
-                <table class="table table-striped">
-                    <tr>
-                        <th>Email</th>
-                        <th>Password</th>
-                    </tr>
-                    <tr>
-                        <td>pobitro@gmail.com</td>
-                        <td>p1p2p3p4</td>
-                    </tr>
-                    <tr>
-                        <td>tamim@gmail.com</td>
-                        <td>t1t2t3t4</td>
-                    </tr>
-                </table>
-            </div>
+         
         </div>
     </div>
 </body>
