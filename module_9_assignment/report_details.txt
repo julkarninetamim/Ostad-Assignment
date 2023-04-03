@@ -1,0 +1,8 @@
+1. First of all i did the html markup
+2. then created a database named "ostad_blog"
+3. in that database i created two tables name "tbl_post and tbl_category"
+4. then i inserted necessery data 
+5. then i queried whenever i needed any specific data
+6. i userd DataBase.php file in inc folder where i connected database and main query setup
+7. in functions.php,i written the functions which i needed
+8. Basically i didn't face any complication
