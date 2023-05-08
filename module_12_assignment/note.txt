@@ -1,4 +1,4 @@
-netify live link: https://645901a6e9789a3e16fa533b--glowing-cuchufli-ae7d46.netlify.app/
+netlify live link: https://645901a6e9789a3e16fa533b--glowing-cuchufli-ae7d46.netlify.app/
 
 This code creates a simple BMI calculator using HTML and JavaScript. It defines an HTML form with input fields for weight and height, and a button to calculate the BMI. When the user clicks the "Calculate BMI" button, the JavaScript code calculates the BMI using the formula and displays the result on the web page. The code uses event listeners to detect when the button is clicked and update the result accordingly. This simple example demonstrates how HTML and JavaScript can be used to create interactive web applications.
 
