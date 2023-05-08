@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"/>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        body{
+            background: url("https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+            width: 100%;
+            background-size: cover;
+        
+        }
+        form{
+            width: 350px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            padding: 30px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .wrapper{
+            background: #221d1da8;
+            width: 100%;
+            height: 100vh;
+       
+        }
+    </Style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <form>
+            <label for="weightInput">Weight (kg):</label>
+            <input type="number" class="form-control" id="weightInput" name="weight">
+            <br>
+            <label for="heightInput">Height (cm):</label>
+            <input type="number" class="form-control" id="heightInput" name="height">
+            <br>
+            <button type="button" class="btn btn-success" id="calculateBtn">Calculate BMI</button>
+            <p id="result"></p>
+      
+          </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
