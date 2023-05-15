@@ -1,0 +1,13 @@
+1) Install Composer: Firstly i download and install composer from the official website (https://getcomposer.org/).
+
+2) Install Laravel via Composer:I open my VS Code terminal to the desired directory where i want to install Laravel. Then run the following command to create a new Laravel project
+ 	=>composer create-project --prefer-dist laravel/laravel project-name
+
+3) Install Laravel via Laravel Installer (optional): i can also use the Laravel installer, it globally using Composer by running the following command:
+ 	=> composer global require laravel/installer
+  	Once installed, you can create a new Laravel project by running:
+	=> laravel new project-name
+
+4) run Installation: After the installation is complete, navigate to the project directory in your terminal or command prompt. To run the development server, use the following command:
+	=> php artisan serve
+This will start the development server, and you should see output indicating that the server is running.
